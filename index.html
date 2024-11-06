@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"> 
+    <title>SumaProductos</title>
+</head>
+<body>
+
+    <!-- captura de información-->
+
+    <div class="container">
+        <div class="row mt-3">
+            <div title="col mt-3 "><strong>Ingreso de productos</strong></div>
+            <div class="mt-3">
+                <label for="formGroupExampleInput" class="form-label">Primer producto</label>
+                <input type="number" class="form-control" id="Producto1">
+              </div>
+              <div class="mt-3 ">
+                <label for="formGroupExampleInput" class="form-label">Segundo producto</label>
+                <input type="number" class="form-control" id="Producto2">
+              </div>
+              <div class="mt-3 ">
+                <label for="formGroupExampleInput" class="form-label">Tercer producto</label>
+                <input type="number" class="form-control" id="Producto3">
+            </div>
+            <div class="mt-3 ">
+                <label for="formGroupExampleInput" class="form-label">Cuarto producto</label>
+                <input type="number" class="form-control" id="Producto4">
+            </div>
+            <div class="mt-3 ">
+                <label for="formGroupExampleInput" class="form-label">Quinto producto</label>
+                <input type="number" class="form-control" id="Producto5">
+            </div>
+        </div>
+
+         <!-- campo que muestra resultados-->
+     <div class="row mt-3">
+        <div title="col mt-3 "><strong>Resultados</strong></div>
+
+        <div class="col mt-2 ">
+            <label for="formGroupExampleInput" class="form-label">Subtotal</label>
+            <input class="form-control" type="number" readonly id="Subtotal">
+        </div>
+        <div class="col mt-2 ">
+            <div class="row">
+                <div class="col" style="text-align: center;">
+                    <label for="formGroupExampleInput" class="form-label">% de Descuento:</label>
+                </div>
+                <div class="col" style="text-align: center;">
+                    <input class="form-control" type="number" readonly id="DescuentoLabel">
+                </div>
+             </div>
+            
+            <input class="form-control" type="number" readonly id="Descuento">
+        </div>
+        <div class="col mt-2 ">
+            <label for="formGroupExampleInput" class="form-label">Total</label>
+            <input class="form-control" type="number" readonly id="Total">
+        </div>      
+
+
+        <div class="row mt-3">
+            <div class="col">
+                <button type="button" class="btn btn-outline-primary" onclick="calcular()">Calcular</button>
+                <button type="button" class="btn btn-outline-danger" onclick="limpiar()">Limpiar</button>
+            </div>
+        </div>
+
+    </div>
+
+   
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
