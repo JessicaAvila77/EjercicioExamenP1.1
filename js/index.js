@@ -40,7 +40,7 @@ function calcular(){
         //comienzan los calculos
         let subtotal = p1 + p2 + p3 + p4 + p5;
 
-        let descuento;
+        let descuento=0;
         let deslabel=0;
 
         if (subtotal <= 999.99)
